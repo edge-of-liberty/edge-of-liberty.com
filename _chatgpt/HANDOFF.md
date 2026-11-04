@@ -13,3 +13,9 @@ Recover 24 missing articles from the GoDaddy editor or backup. The public blog e
 ## Continuing on another computer
 
 Clone or pull this repository. Serve the root with a local web server to preview it. Update this handoff with each migration milestone. Existing archive files are tracked. To share a new file under the ignored _chatgpt directory, explicitly add it with git add -f. Pages publishes from main at the repository root. The archive is public repository material.
+
+## Editor setup and publication checkpoint
+
+Nancy's existing BCF workspace on the Mac is at `~/createhappinesshouse.com/BCF.code-workspace`. It now lists createhappinesshouse.com, edgeofliberty.us, and edge-of-liberty.com. Use the last folder for this migration. A separate Local Repositories workspace was also created and is unnecessary. To add another clone in BCF, use File → Add Folder to Workspace. On another Mac, place the three clones side by side if using the same workspace definition.
+
+Nancy created the public repository and enabled Pages. At handoff, GitHub main was still at 28d0b37, before the local site capture fecf755. HTTPS and SSH push attempts lacked working authentication. The Pages address responded, but that did not verify deployment of the migration. Next, push local main from an authenticated GitHub Desktop session, then verify the remote commit and test the published preview at https://edge-of-liberty.github.io/edge-of-liberty.com/ before any cutover. No DNS change or cancellation was performed.
