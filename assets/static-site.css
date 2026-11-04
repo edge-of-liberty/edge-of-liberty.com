@@ -1,0 +1,26 @@
+/* Keep the captured theme; scope new styles to repaired functionality. */
+[hidden] { display:none !important; }
+.static-content,.static-contact,.static-calendar,.static-posts { max-width:1100px; margin:0 auto; padding:24px; line-height:1.65; }
+.static-content { padding-top:48px; padding-bottom:48px; }
+.static-content h1 { font-size:clamp(26px,4vw,40px); }
+.static-content a,.static-contact a,.static-calendar a,.static-posts a { color:#8a220b; text-decoration:underline; }
+.static-button { display:inline-block; padding:14px 28px; border-radius:28px; background:#a93212; color:white !important; text-decoration:none !important; }
+.static-calendar iframe { width:100%; height:600px; border:0; }
+.static-embed { width:100%; overflow-x:auto; }
+.static-embed iframe { max-width:100%; border:0; }
+.static-embed img { max-width:100%; height:auto; }
+.static-gallery { max-width:1100px; margin:0 auto; padding:0 16px 24px; }
+.static-slide { display:block; text-align:center; }
+.static-slide img { display:block; width:100%; height:auto; margin:0 auto 12px; }
+.static-gallery.enhanced .static-slide img { height:600px; max-height:70vh; object-fit:contain; background:#f7f5ef; }
+.gallery-controls { display:flex; justify-content:center; align-items:center; gap:20px; margin-top:16px; }
+.gallery-controls button { font:inherit; padding:10px 16px; cursor:pointer; background:#fff; color:#79200c; border:1px solid #79200c; border-radius:20px; }
+.accordion-answer[hidden] { display:none !important; }
+.accordion-question[aria-expanded="true"] .accordion-icon { transform:rotate(180deg); }
+:focus-visible { outline:3px solid #0074a8 !important; outline-offset:4px; }
+@media(max-width:600px) { .static-calendar iframe { height:550px; } .gallery-controls { gap:10px; } .static-content,.static-contact,.static-calendar { padding:20px 16px; } }
+/* GoDaddy formerly measured navigation and revealed these items at runtime. */
+[data-ux="Nav"] > ul { display:flex; flex-wrap:wrap; justify-content:flex-end; align-items:center; gap:8px 18px; white-space:normal; }
+[data-ux="Nav"] > ul > .nav-item { visibility:visible !important; margin:0 !important; padding:0 !important; }
+[data-ux="Nav"] > ul > .nav-item > a { padding:6px 0 !important; }
+[data-aid^="FEAT_CAT_IMAGE_RND"] > div { height:100% !important; min-height:inherit; }
