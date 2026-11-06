@@ -209,7 +209,9 @@ for img in s.select('[srcset]'):img['srcset']=img['srcset'].replace('../assets/'
 for st in s.select('style'):
  if st.string:st.string=st.string.replace('../assets/','assets/')
 s.title.string='Page not found | The Edge of Liberty'
-s.head.insert(0,s.new_tag('base',href='/edge-of-liberty.com/'))
+s.head.insert(0,s.new_tag('base',href='/'))
+base_script=s.new_tag('script');base_script.string='document.querySelector("base").href=location.hostname==="edge-of-liberty.github.io"||location.pathname.startsWith("/edge-of-liberty.com/")?"/edge-of-liberty.com/":"/";'
+s.head.insert(1,base_script)
 s.head.append(s.new_tag('meta',attrs={'name':'robots','content':'noindex'}))
 (ROOT/'404.html').write_text(str(s))
 ns='http://www.sitemaps.org/schemas/sitemap/0.9';doc=ET.Element('urlset',xmlns=ns)

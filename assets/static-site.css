@@ -24,3 +24,8 @@
 [data-ux="Nav"] > ul > .nav-item { visibility:visible !important; margin:0 !important; padding:0 !important; }
 [data-ux="Nav"] > ul > .nav-item > a { padding:6px 0 !important; }
 [data-aid^="FEAT_CAT_IMAGE_RND"] > div { height:100% !important; min-height:inherit; }
+.static-article { color:#222; background:#fff; line-height:1.7; overflow-wrap:anywhere; }
+.static-article h1 { font-size:clamp(26px,4vw,38px); line-height:1.25; }
+.static-article a { color:#557f20; text-decoration:underline; }
+.static-article time { display:block; color:#555; margin-bottom:24px; }
+.static-article img,.static-article iframe { max-width:100%; }

@@ -33,6 +33,9 @@ with sync_playwright() as p:
  for f in files:
   path=f.parent.relative_to(ROOT).as_posix();url=base+('' if path=='.' else path+'/')
   response=page.goto(url,wait_until='load');assert response.status==200,(path,response.status)
+  refresh=B(f.read_text(),'html.parser').select_one('meta[http-equiv="refresh"]')
+  if refresh:
+   page.wait_for_url(urljoin(url,refresh['content'].split('url=',1)[1]),wait_until='load')
   # Force all captured images to load, including gallery slides.
   page.locator('img').evaluate_all('(xs)=>xs.forEach(x=>x.loading="eager")')
   page.wait_for_function('Array.from(document.images).filter(x=>x.src.startsWith(location.origin)).every(x=>x.complete)',timeout=20000)
@@ -62,7 +65,7 @@ with sync_playwright() as p:
  assert page.locator('form').get_attribute('action')=='https://www.paypal.com/cgi-bin/webscr'
  assert page.locator('input[name="business"]').input_value()=='paypal@batshitcrazyfarms.com'
  assert page.locator('input[name="return"]').input_value()==page.url
- page.goto(base+'food-trucks/',wait_until='load');assert page.locator('a[href="https://edgeofliberty.us/book"]').count()==2
+ page.goto(base+'food-trucks/',wait_until='load');assert page.locator('a[href="https://edgeofliberty.us/book"]').count()==6
  browser.close()
 assert not errors,errors
 print('PASS: desktop/mobile navigation, gallery wraparound, FAQs, contact, PayPal handoff fields, food-truck links')

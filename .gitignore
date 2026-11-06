@@ -9,3 +9,6 @@ vendor/
 /_chatgpt/
 
 /.venv-migration/
+
+.DS_Store
+/blog-export.xml
