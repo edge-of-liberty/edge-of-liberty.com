@@ -45,6 +45,6 @@ The original capture is preserved in `_chatgpt/outputs/edge-of-liberty.com/`. Ne
 - Some vendor sites and the old registration form linked from historical articles are no longer publicly available. Original article text and links are preserved; do not invent replacement destinations.
 - Existing season dates, opening-hour differences, and historic pricing are preserved, not editorially revised.
 - Confirm mailbox delivery and perform a user-supervised PayPal checkout check before final cutover. Link checks do not establish email delivery or successful payment.
-- The custom-domain configuration and GitHub Pages DNS were added outside this migration session. The github.io URL redirects to the live domain. Preserve CNAME and DNS; publication to main now updates the live site and awaits Nancy’s decision.
+- The custom-domain configuration and GitHub Pages DNS were added outside this migration session. The github.io URL redirects to the live domain. Preserve CNAME and DNS; publication to main updates the live site. Nancy has authorized changes to go live.
 
 Use command-line Git with the existing SSH authentication. Do not use GitHub Desktop.

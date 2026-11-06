@@ -35,3 +35,7 @@ The full 51-route browser check passed before adding two historical URL aliases;
 Final validation: all 53 routes, local images, CSS/srcset references, mobile width, navigation, galleries, FAQs, contact links, food-truck links, and PayPal handoff fields passed. Recovered article typography/background was visually checked and repaired. No real email or payment was sent.
 
 DNS inspection found the domain already points to GitHub Pages (185.199.108–111.153). This was an external change; do not remove CNAME. The earlier request to remove CNAME was superseded by a request to either publish to the now-live domain or retain a review branch/local preview. Preserve DNS and subscriptions.
+
+## Publication authorization
+
+Nancy confirmed that any changes should go live. Keep CNAME and DNS unchanged. The tested migration is approved for publication to main through command-line Git. Commit 6090caf contains all recovered published articles and passed the 53-route validation.
