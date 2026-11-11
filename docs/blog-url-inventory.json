@@ -1,0 +1,330 @@
+{
+  "export_entries": 27,
+  "published_posts": 26,
+  "draft_entries": 1,
+  "sitemap_urls": 26,
+  "preserved_article_paths": [
+    "/blog/f/2020-property-tour-video",
+    "/blog/f/beginning-farmer",
+    "/blog/f/black-friday-bonfire",
+    "/blog/f/community-garden",
+    "/blog/f/cooped-up",
+    "/blog/f/dreaming-for-the-future",
+    "/blog/f/edge-of-liberty-craft-fair---august-21-2022",
+    "/blog/f/edge-of-liberty-craft-fair---july-17-2022",
+    "/blog/f/edge-of-liberty-craft-fair---june-19-2022---fathers-day",
+    "/blog/f/edge-of-liberty-craft-fair---may-15-2022",
+    "/blog/f/edge-of-liberty-craft-fair---october-16-2022",
+    "/blog/f/edge-of-liberty-craft-fair---september-18-2022",
+    "/blog/f/facebook-live-walkthrough-91816",
+    "/blog/f/july-2020-update",
+    "/blog/f/open-farm---april-25---10-am-to-2pm",
+    "/blog/f/open-farm---july-xx---10-am-to-2-pm",
+    "/blog/f/open-farm---june-27---10-am-to-2-pm",
+    "/blog/f/open-farm---may-23---10-am-to-2-pm",
+    "/blog/f/open-farm---sunday-march-21",
+    "/blog/f/open-farm-craft-fair---august-22---10-am-to-2-pm",
+    "/blog/f/open-farm-craft-fair---october-24",
+    "/blog/f/open-farm-craft-fair---september-26",
+    "/blog/f/pcmga-garden-walk---june-26",
+    "/blog/f/reflections-of-the-season",
+    "/blog/f/site-launch-day",
+    "/blog/f/time-of-transition",
+    "/f/july-2020-update"
+  ],
+  "missing_posts_or_images": [],
+  "unmatched_urls": [],
+  "remote_article_images": [],
+  "unresolved_internal_links": [
+    "../../../our-gardens/#b8e06aa2-935c-46aa-a277-762000fe49e1"
+  ],
+  "unrecovered_linked_pages": [
+    "/2021-pcmga-garden-walk",
+    "/about-bella-lena",
+    "/crafters:-bella-lena",
+    "/open-farm-vendors"
+  ],
+  "urls": [
+    {
+      "original_url": "https://edge-of-liberty.com/blog/f/dreaming-for-the-future",
+      "path": "/blog/f/dreaming-for-the-future",
+      "slug": "dreaming-for-the-future",
+      "matched": true,
+      "evidence": [
+        "_chatgpt/backups/blog-export.xml"
+      ]
+    },
+    {
+      "original_url": "https://edge-of-liberty.com/blog/f/edge-of-liberty-craft-fair---october-16-2022/",
+      "path": "/blog/f/edge-of-liberty-craft-fair---october-16-2022",
+      "slug": "edge-of-liberty-craft-fair---october-16-2022",
+      "matched": true,
+      "evidence": [
+        "_chatgpt/outputs/edge-of-liberty.com/blog/f/edge-of-liberty-craft-fair---october-16-2022/index.html",
+        "_chatgpt/outputs/edge-of-liberty.com/blog/index.html"
+      ]
+    },
+    {
+      "original_url": "https://edge-of-liberty.com/blog/f/edge-of-liberty-craft-fair---september-18-2022/",
+      "path": "/blog/f/edge-of-liberty-craft-fair---september-18-2022",
+      "slug": "edge-of-liberty-craft-fair---september-18-2022",
+      "matched": true,
+      "evidence": [
+        "_chatgpt/outputs/edge-of-liberty.com/blog/f/edge-of-liberty-craft-fair---september-18-2022/index.html",
+        "_chatgpt/outputs/edge-of-liberty.com/blog/index.html"
+      ]
+    },
+    {
+      "original_url": "https://edge-of-liberty.com/blog/f/pcmga-garden-walk---june-26",
+      "path": "/blog/f/pcmga-garden-walk---june-26",
+      "slug": "pcmga-garden-walk---june-26",
+      "matched": true,
+      "evidence": [
+        "_chatgpt/backups/blog-export.xml"
+      ]
+    },
+    {
+      "original_url": "https://edge-of-liberty.com/f/july-2020-update",
+      "path": "/f/july-2020-update",
+      "slug": "july-2020-update",
+      "matched": true,
+      "evidence": [
+        "_chatgpt/backups/blog-export.xml"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/2020-property-tour-video",
+      "path": "/blog/f/2020-property-tour-video",
+      "slug": "2020-property-tour-video",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/beginning-farmer",
+      "path": "/blog/f/beginning-farmer",
+      "slug": "beginning-farmer",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/black-friday-bonfire",
+      "path": "/blog/f/black-friday-bonfire",
+      "slug": "black-friday-bonfire",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/community-garden",
+      "path": "/blog/f/community-garden",
+      "slug": "community-garden",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/cooped-up",
+      "path": "/blog/f/cooped-up",
+      "slug": "cooped-up",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/dreaming-for-the-future",
+      "path": "/blog/f/dreaming-for-the-future",
+      "slug": "dreaming-for-the-future",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/edge-of-liberty-craft-fair---august-21-2022",
+      "path": "/blog/f/edge-of-liberty-craft-fair---august-21-2022",
+      "slug": "edge-of-liberty-craft-fair---august-21-2022",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/edge-of-liberty-craft-fair---july-17-2022",
+      "path": "/blog/f/edge-of-liberty-craft-fair---july-17-2022",
+      "slug": "edge-of-liberty-craft-fair---july-17-2022",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/edge-of-liberty-craft-fair---june-19-2022---fathers-day",
+      "path": "/blog/f/edge-of-liberty-craft-fair---june-19-2022---fathers-day",
+      "slug": "edge-of-liberty-craft-fair---june-19-2022---fathers-day",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/edge-of-liberty-craft-fair---may-15-2022",
+      "path": "/blog/f/edge-of-liberty-craft-fair---may-15-2022",
+      "slug": "edge-of-liberty-craft-fair---may-15-2022",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/edge-of-liberty-craft-fair---october-16-2022",
+      "path": "/blog/f/edge-of-liberty-craft-fair---october-16-2022",
+      "slug": "edge-of-liberty-craft-fair---october-16-2022",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/edge-of-liberty-craft-fair---september-18-2022",
+      "path": "/blog/f/edge-of-liberty-craft-fair---september-18-2022",
+      "slug": "edge-of-liberty-craft-fair---september-18-2022",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/facebook-live-walkthrough-91816",
+      "path": "/blog/f/facebook-live-walkthrough-91816",
+      "slug": "facebook-live-walkthrough-91816",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/july-2020-update",
+      "path": "/blog/f/july-2020-update",
+      "slug": "july-2020-update",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/open-farm---april-25---10-am-to-2pm",
+      "path": "/blog/f/open-farm---april-25---10-am-to-2pm",
+      "slug": "open-farm---april-25---10-am-to-2pm",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/open-farm---july-xx---10-am-to-2-pm",
+      "path": "/blog/f/open-farm---july-xx---10-am-to-2-pm",
+      "slug": "open-farm---july-xx---10-am-to-2-pm",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/open-farm---june-27---10-am-to-2-pm",
+      "path": "/blog/f/open-farm---june-27---10-am-to-2-pm",
+      "slug": "open-farm---june-27---10-am-to-2-pm",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/open-farm---may-23---10-am-to-2-pm",
+      "path": "/blog/f/open-farm---may-23---10-am-to-2-pm",
+      "slug": "open-farm---may-23---10-am-to-2-pm",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/open-farm---sunday-march-21",
+      "path": "/blog/f/open-farm---sunday-march-21",
+      "slug": "open-farm---sunday-march-21",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/open-farm-craft-fair---august-22---10-am-to-2-pm",
+      "path": "/blog/f/open-farm-craft-fair---august-22---10-am-to-2-pm",
+      "slug": "open-farm-craft-fair---august-22---10-am-to-2-pm",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/open-farm-craft-fair---october-24",
+      "path": "/blog/f/open-farm-craft-fair---october-24",
+      "slug": "open-farm-craft-fair---october-24",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/open-farm-craft-fair---september-26",
+      "path": "/blog/f/open-farm-craft-fair---september-26",
+      "slug": "open-farm-craft-fair---september-26",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/pcmga-garden-walk---june-26",
+      "path": "/blog/f/pcmga-garden-walk---june-26",
+      "slug": "pcmga-garden-walk---june-26",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/reflections-of-the-season",
+      "path": "/blog/f/reflections-of-the-season",
+      "slug": "reflections-of-the-season",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/site-launch-day",
+      "path": "/blog/f/site-launch-day",
+      "slug": "site-launch-day",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    },
+    {
+      "original_url": "https://theedgeofliberty.godaddysites.com/blog/f/time-of-transition",
+      "path": "/blog/f/time-of-transition",
+      "slug": "time-of-transition",
+      "matched": true,
+      "evidence": [
+        "recovered sitemap"
+      ]
+    }
+  ]
+}

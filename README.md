@@ -37,7 +37,7 @@ The original capture is preserved in `_chatgpt/outputs/edge-of-liberty.com/`. Ne
 
 `scripts/static_migration.py` recreates the initial static conversion from the original snapshot, overwriting converted HTML. **It is not a routine build command.** If deliberately regenerating, follow it with `scripts/import_blog.py` to restore all 26 published articles. Review the diff before committing. Gallery configuration and asset mappings are retained in `_chatgpt/work/`.
 
-`scripts/import_blog.py` uses local `blog-export.xml` when present, otherwise the preserved published-only XML. It never imports draft posts. The full export is ignored because it contains unpublished content. Published article source and image mappings are preserved separately for reproducibility.
+`scripts/import_blog.py` uses `_chatgpt/backups/blog-export.xml` when present, otherwise the preserved published-only XML. It inventories `_chatgpt/backups/sitemaps/sitemap.blog.xml` and captured links, verifies existing article text/titles/dates/links/image order before writing, preserves each page’s existing shell, and stops on differing content. It never imports draft posts. The full export is ignored because it contains unpublished content. Published article source and image mappings are preserved separately for reproducibility.
 
 ## Remaining review items
 
@@ -48,3 +48,9 @@ The original capture is preserved in `_chatgpt/outputs/edge-of-liberty.com/`. Ne
 - The custom-domain configuration and GitHub Pages DNS were added outside this migration session. The github.io URL redirects to the live domain. Preserve CNAME and DNS; publication to main updates the live site. Nancy has authorized changes to go live.
 
 Use command-line Git with the existing SSH authentication. Do not use GitHub Desktop.
+
+## Blog migration audit (November 11, 2026)
+
+All 26 sitemap articles match the 26 published export entries. The 27th export entry is an unpublished draft without a slug. Preserved 27 distinct article paths: 26 canonical `/blog/f/` paths and the historical `/f/july-2020-update` alias. Article navigation includes newer/older posts and the index. All 142 article image assets are local.
+
+Run `.venv-migration/bin/python -B scripts/check_blog.py` for source parity, route coverage, sitemap, navigation, and overwrite protection checks. Run `scripts/blog_inventory.py` to refresh [the detailed report](docs/blog-migration-report.md) and [URL inventory](docs/blog-url-inventory.json). One old garden-section anchor and four unrecovered non-blog destinations remain explicitly documented; no content was invented.

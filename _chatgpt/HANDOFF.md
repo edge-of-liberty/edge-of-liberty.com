@@ -39,3 +39,9 @@ DNS inspection found the domain already points to GitHub Pages (185.199.108–11
 ## Publication authorization
 
 Nancy confirmed that any changes should go live. Keep CNAME and DNS unchanged. The tested migration is approved for publication to main through command-line Git. Commit 6090caf contains all recovered published articles and passed the 53-route validation.
+
+## November 11, 2026 — blog migration finished
+
+Compared the manually recovered sitemap (including its browser-generated preface) with all 27 export entries and existing article contents. All 26 published posts match the sitemap; the remaining draft has no slug and stays unpublished. Preserved 27 distinct article routes, including the evidenced /f/july-2020-update alias. Rebuilt the existing index, added newer/older/index navigation, and excluded redirect aliases from the canonical sitemap. All 142 blog images are local.
+
+Importer now checks existing text, title, date, links and image order before writing and preserves each existing page shell. Detailed results and source URL mapping are in docs/blog-migration-report.md and docs/blog-url-inventory.json. No missing published posts, unmatched blog URLs, or broken local images. One old garden-section fragment (used in three posts) and four linked non-blog pages without recovered content remain unresolved. Do not invent their content. DNS/design unchanged. Changes are authorized to go live using command-line Git.
