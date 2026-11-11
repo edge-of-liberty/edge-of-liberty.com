@@ -20,7 +20,7 @@
 :focus-visible { outline:3px solid #0074a8 !important; outline-offset:4px; }
 @media(max-width:600px) { .static-calendar iframe { height:550px; } .gallery-controls { gap:10px; } .static-content,.static-contact,.static-calendar { padding:20px 16px; } }
 /* GoDaddy formerly measured navigation and revealed these items at runtime. */
-[data-ux="Nav"] > ul { display:flex; flex-wrap:wrap; justify-content:flex-end; align-items:center; gap:8px 18px; white-space:normal; }
+[data-ux="Nav"] > ul { display:flex; flex-wrap:nowrap; justify-content:flex-end; align-items:center; gap:clamp(8px,1vw,18px); white-space:nowrap; }
 [data-ux="Nav"] > ul > .nav-item { visibility:visible !important; margin:0 !important; padding:0 !important; }
 [data-ux="Nav"] > ul > .nav-item > a { padding:6px 0 !important; }
 [data-aid^="FEAT_CAT_IMAGE_RND"] > div { height:100% !important; min-height:inherit; }
@@ -29,3 +29,33 @@
 .static-article a { color:#557f20; text-decoration:underline; }
 .static-article time { display:block; color:#555; margin-bottom:24px; }
 .static-article img,.static-article iframe { max-width:100%; }
+
+/* Existing green/white palette and local heading face, applied to blog previews. */
+.blog-listing { max-width:1100px; margin:auto; padding:24px; color:#333; line-height:1.6; }
+.blog-cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:32px; }
+.blog-card { min-width:0; text-align:left; }
+.blog-thumbnail { display:block; width:100%; aspect-ratio:3/2; object-fit:cover; }
+.blog-card h3 { font-family:'Righteous',serif,system-ui; font-weight:400; font-size:23px; line-height:1.3; margin:12px 0; }
+.blog-listing a { color:#557f20; }
+.blog-meta { font-size:14px; color:#555; margin:12px 0 0; }
+.continue-reading { text-decoration:underline; }
+.blog-filters { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:28px; }
+.blog-filters button { font:inherit; color:#557f20; background:#fff; border:1px solid #557f20; border-radius:20px; padding:8px 18px; cursor:pointer; }
+.blog-filters button[aria-pressed=true] { color:#fff; background:#557f20; }
+.static-more { position:relative; list-style:none; }
+.more-disclosure summary { cursor:pointer; font:inherit; text-transform:uppercase; padding:6px 0; }
+.more-links { position:absolute; right:0; top:100%; z-index:1000; min-width:180px; background:#fff; color:#222; padding:8px; box-shadow:0 4px 12px #0003; text-align:left; }
+.more-links a { display:block; padding:10px 14px; color:inherit; text-decoration:none; font-family:Helvetica,Arial,sans-serif; }
+.more-links a:hover,.more-links a:focus-visible { background:#f4f4f4; color:#557f20; }
+[data-ux=Nav] > ul > li > a,.more-disclosure summary { font-size:clamp(12px,1.1vw,16px) !important; }
+[data-ux=NavigationDrawer] { overflow-y:auto !important; }
+[data-ux=NavigationDrawerListItem] { margin:0 !important; }
+[data-ux=NavigationDrawer] [data-ux=NavigationDrawerLink],[data-ux=NavigationDrawer] [data-ux=NavigationDrawerLinkActive] { padding-top:10px !important; padding-bottom:10px !important; min-height:44px; font-size:18px !important; }
+@media(max-width:900px) { .blog-cards { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:600px) { .blog-cards { grid-template-columns:1fr; } .blog-listing { padding:20px 16px; } }
+/* Use the existing mobile header when the five primary links would be cramped. */
+@media(min-width:768px) and (max-width:1199px) {
+ .phase1-mobile-bar { display:flex !important; }
+ .phase1-desktop-bar { display:none !important; }
+ [data-aid=HAMBURGER_MENU_LINK] { display:inline-flex !important; }
+}

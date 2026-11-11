@@ -19,7 +19,7 @@ for r in records:
         assert canonical and canonical['href'].endswith('/blog/f/'+r['slug']+'/')
         assert s.select_one('meta[http-equiv="refresh"]')
 index=B((ROOT/'blog/index.html').read_text(),'html.parser')
-assert len(index.select('.static-posts li'))==len(posts)
+assert len(index.select('.blog-card') or index.select('.static-posts li'))==len(posts)
 for slug in posts:
     s=B((ROOT/'blog/f'/slug/'index.html').read_text(),'html.parser')
     assert s.select_one('.blog-post-nav a[href="../../"]')

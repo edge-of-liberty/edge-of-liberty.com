@@ -15,24 +15,38 @@
     if (open) { (close || drawer.querySelector('a'))?.focus(); }
     else if (drawer.contains(document.activeElement)) toggle?.focus();
   }
+  if (drawer && toggle) toggle.setAttribute('aria-controls', drawer.id);
   setDrawer(false);
+  window.matchMedia('(min-width:1200px)').addEventListener('change', e => { if (e.matches) setDrawer(false); });
   document.addEventListener('click', event => {
     const opener = event.target.closest('[data-aid="HAMBURGER_MENU_LINK"]');
     const closer = event.target.closest('[data-ux="CloseIcon"]');
     if (opener || closer) { event.preventDefault(); setDrawer(Boolean(opener)); return; }
-    const dropdown = event.target.closest('[data-ux="NavLinkDropdown"]');
-    if (dropdown) {
-      event.preventDefault();
-      const menu = dropdown.parentElement.parentElement.querySelector('[data-ux="Dropdown"]');
-      const open = dropdown.getAttribute('aria-expanded') !== 'true';
-      if (menu) menu.style.setProperty('display', open ? 'block' : 'none', 'important');
-      dropdown.setAttribute('aria-expanded', String(open));
-    } else {
-      document.querySelectorAll('[data-ux="NavLinkDropdown"][aria-expanded="true"]').forEach(link => {
-        link.setAttribute('aria-expanded', 'false');
-        link.parentElement.parentElement.querySelector('[data-ux="Dropdown"]')?.style.setProperty('display', 'none', 'important');
+    document.querySelectorAll('.more-disclosure[open]').forEach(menu => {
+      if (!menu.contains(event.target)) menu.open = false;
+    });
+  });
+  document.querySelectorAll('.more-disclosure').forEach(menu => {
+    menu.addEventListener('keydown', event => {
+      if (event.key === 'Escape') { menu.open = false; menu.querySelector('summary').focus(); event.stopPropagation(); }
+      if (event.key === 'ArrowDown' && event.target.tagName === 'SUMMARY') {
+        event.preventDefault(); menu.open = true; menu.querySelector('a')?.focus();
+      }
+    });
+    menu.addEventListener('focusout', event => { if (!menu.contains(event.relatedTarget)) menu.open = false; });
+  });
+  document.querySelectorAll('.blog-listing').forEach(listing => {
+    const filters = listing.querySelector('.blog-filters');
+    if (!filters) return;
+    filters.hidden = false;
+    filters.addEventListener('click', event => {
+      const button = event.target.closest('[data-blog-category]');
+      if (!button) return;
+      filters.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b === button)));
+      listing.querySelectorAll('.blog-card').forEach(card => {
+        card.hidden = button.dataset.blogCategory !== 'All' && !JSON.parse(card.dataset.categories).includes(button.dataset.blogCategory);
       });
-    }
+    });
   });
   document.addEventListener('keydown', event => {
     if (event.key === 'Escape') setDrawer(false);

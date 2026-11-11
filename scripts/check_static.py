@@ -50,7 +50,10 @@ with sync_playwright() as p:
  page.keyboard.press('Escape');assert page.locator('[data-ux="NavigationDrawer"]').get_attribute('aria-hidden')=='true'
  page.set_viewport_size({'width':1440,'height':1000})
  assert page.locator('[data-ux="NavLink"]').first.is_visible()
- assert page.locator('[data-ux="Nav"] a:visible').count()==10
+ assert page.locator('[data-ux="Nav"] a:visible').count()==5
+ page.locator('.more-disclosure summary').click()
+ assert page.locator('.more-links a:visible').count()==5
+ page.keyboard.press('Escape')
  page.screenshot(path=str(ROOT/'_chatgpt/work/static-home-desktop.png'),full_page=True)
  page.set_viewport_size({'width':390,'height':850});page.screenshot(path=str(ROOT/'_chatgpt/work/static-home-mobile.png'),full_page=True)
  page.goto(base+'our-gardens/',wait_until='load');assert page.locator('.static-slide').count()==67
